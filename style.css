@@ -531,7 +531,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url(/img/Title/interier-restorana.jpg);
+        background-image: url(./img/Title/interier-restorana.jpg);
         border-radius: 20px;
         height: 400px;
     }

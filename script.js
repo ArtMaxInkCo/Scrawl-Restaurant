@@ -1,45 +1,3 @@
-/*
-const Menu = document.getElementById('Menu')
-const toMenu = document.getElementById('toMenu')
-const toMenu2 = document.getElementById('toMenu2')
-
-const scrollToMenu = () => {
-    Menu.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-toMenu.onclick = scrollToMenu;
-toMenu2.onclick = scrollToMenu;
-
-
-const Restaurant = document.getElementById('Restaurant')
-const toRestaurant = document.getElementById('toRestaurant')
-
-const scrollToRestaurant = () => {
-    Restaurant.scrollIntoView({ behavior: 'smooth', block: 'start', })
-}
-
-toRestaurant.onclick = scrollToRestaurant;
-
-
-const History = document.getElementById('History')
-const toHistory = document.getElementById('toHistory')
-
-const scrollToHistory = () => {
-    History.scrollIntoView({ behavior: 'smooth', block: 'start', })
-}
-
-toHistory.onclick = scrollToHistory;
-
-const Contacts = document.getElementById('Contacts')
-const toContacts = document.getElementById('toContacts')
-
-const scrollToContacts = () => {
-    Contacts.scrollIntoView({ behavior: "smooth", block: "start" })
-}
-
-toContacts.onclick = scrollToContacts;
-*/
-
 
 const isMobile = {
     Android: function () {
@@ -83,8 +41,11 @@ if (isMobile.any()) {
     document.body.classList.add('_pc')
 }
 
+
+
 const iconMenu = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body')
+
 if (iconMenu) {
     const menuBody = document.querySelector('.menu__body');
     iconMenu.addEventListener('click', function (e) {
@@ -96,7 +57,9 @@ if (iconMenu) {
 
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]')
+
 if (menuLinks.length > 0) {
+    
     menuLinks.forEach(menuLink => {
         menuLink.addEventListener('click', onMenuLinkClick)
     });
@@ -124,34 +87,6 @@ if (menuLinks.length > 0) {
     }
 }
 
-/*const buttonLinks = document.querySelectorAll('.btn-welcome[data-goto]')
-if (buttonLinks.length > 0) {
-    buttonLinks.forEach(buttonLink => {
-        buttonLink.addEventListener('click', onButtonLinkClick)
-    });
-    function onButtonLinkClick(e) {
-        const buttonLink = e.target;
-        if (buttonLink.dataset.goto && document.querySelector(buttonLink.dataset.goto)) {
-            const goBlock = document.querySelector(buttonLink.dataset.goto);
-            const goBlockValue = goBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
-
-            window.scrollTo({
-                top: goBlockValue,
-                behavior: 'smooth'
-            })
-            e.preventDefault();
-        }
-    }
-}*/
-
-/*const Menu = document.getElementById('Menu')
-const toMenu = document.getElementById('toMenu')
-
-const scrollToMenu = () => {
-    Menu.scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
-
-toMenu.onclick = scrollToMenu;*/
 
 const Welcome = document.getElementById('Welcome')
 const toWelcome = document.getElementById('toWelcome')
